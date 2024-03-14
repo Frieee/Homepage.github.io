@@ -5,6 +5,10 @@
   font-family: 'Poppins', sans-serif; 
 }
 
+::-webkit-scrollbar{
+  width:0px;
+}
+
 body {
   
   height: 100vh;
@@ -13,6 +17,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   backdrop-filter: blur(2px);
+  display: grid;
 }
 
 header {
@@ -26,9 +31,14 @@ header {
  header .navbar {
   display: flex;
   align-items: center;
-  max-width: 1700px;
   margin: 0 auto;
-  justify-content: space-between;
+ }
+
+ .menu-links {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
  }
 
  .btn {
@@ -55,7 +65,7 @@ header {
   font-size: 50px;
   font-weight: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  
+  justify-content: left;
  }
  
  .navbar .logo:hover {
@@ -65,7 +75,6 @@ header {
  .navbar .menu-links {
   display: flex;
   gap: 40px;
-  margin-right: 700px;
  }
 
 .navbar a {
@@ -173,17 +182,18 @@ header {
   position: absolute;
   height: 90%;
   width: 100%;
-  top: 100px;
+  top: 50%;
   border: none;
   border-radius: 0 0 10px 10px;
   align-items: center;
 }
 
 .hero-section .iframe-vid {
+ position: absolute;
+ right: 10%;
+ bottom: 30%;
  border: none;
- right: 10px;
- top: 100px;
- height: 100%;
- width: 100%;
  border-radius: 50px;
 }
+
+
