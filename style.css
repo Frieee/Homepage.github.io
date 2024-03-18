@@ -180,19 +180,11 @@ header {
 
 .iframe {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   top: 20%;
   border: none;
   border-radius: 0 0 10px 10px;
   align-items: center;
-}
-
-.hero-section .iframe-vid {
- position: absolute;
- right: 10%;
- bottom: 30%;
- border: none;
- border-radius: 50px;
 }
 
